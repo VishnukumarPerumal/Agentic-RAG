@@ -1,0 +1,62 @@
+# ============================================================================
+# Environment & Secrets (NEVER commit real .env files)
+# ============================================================================
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ============================================================================
+# Local PostgreSQL Cluster Data & Logs (NEVER commit raw DB files)
+# ============================================================================
+.pgdata/
+backend/.pgdata/
+*.log
+*.sql.gz
+*.dump
+
+# ============================================================================
+# Python / Backend
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ============================================================================
+# Next.js / Node.js Frontend
+# ============================================================================
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+build/
+next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================================================
+# macOS / OS / IDE Files
+# ============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.vscode/
+.idea/
+*.swp
+*.swo
